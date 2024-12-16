@@ -21,7 +21,7 @@ with st.sidebar:
 base_url: str = "https://api.siliconflow.cn/v1"
 
 def main() -> None:
-    function_list: list = ["Text Chat", "Vision Chat", "Reasoning Chat", "Image Generation"]
+    function_list: list = ["Text Chat", "Vision Chat", "Reasoning Chat", "Image Generation", "Fetch Chat"]
     function_selector: str = st.sidebar.selectbox("Function", function_list, 0, key="func_", disabled=not api_key)
 
     if function_selector == "Text Chat":
