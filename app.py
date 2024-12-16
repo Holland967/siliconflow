@@ -5,6 +5,7 @@ from text_chat import text_chatting
 from vision_chat import vision_chatting
 from reasoning_chat import reasoning_chatting
 from image_generation import image_generator
+from fetch_chat import fetch_chatting
 
 api_key: str = ""
 
@@ -31,6 +32,8 @@ def main() -> None:
         reasoning_chatting(api_key=api_key, base_url=base_url)
     elif function_selector == "Image Generation":
         image_generator(api_key=api_key)
+    elif function_selector == "Fetch Chat":
+        fetch_chatting(api_key=api_key, base_url=base_url)
 
 if __name__ == "__main__":
     main()
