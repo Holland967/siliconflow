@@ -37,7 +37,7 @@ def audioText(api_key: str):
     elif audio_input is None:
         st.session_state.input_audio = None
     
-    transcript_btn = st.button("Transcript", "transcript_btn", type="primary", disabled=disable)
+    transcript_btn = st.button("Transcript", "transcript_btn", type="primary")
 
     transcription_str = ""
 
